@@ -1,0 +1,53 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.ruff_cache/
+
+# Foundry (Solidity)
+evm/cache/
+evm/out/
+
+# Infrastructure/OS specific
+.DS_Store
+Thumbs.db
+Agent_OSI__A_Layered_Protocol_Stack_for_the_Decentralized_Internet_of_Agents.pdf:Zone.Identifier
+
+# Build logs and temporary files
+kubo/build-log
+scripts/infrastructure/pids/
+
+# Archives
+*.tar.gz
+
+# Environment files
+.env
+
+# Large files
+*.run
+
+# XMTP and Local Databases
+xmtp-local-*.db3*
+xmtp-dev-*.db3*
+*.db3*
+xmtp-node-go/
+
+# Dependencies
+node_modules/
+
+# Infrastructure and Logs
+anvil.log
+outputs/
+ComfyUI/
+
+# Experiment outputs and specs
+raw_data/
+plots/
+openspec/
+
+# Documentation and Extras
+Agent_OSI__A_Layered_Protocol_Stack_for_the_Decentralized_Internet_of_Agents.txt
+
+# Local tooling
+.opencode/
+.github/

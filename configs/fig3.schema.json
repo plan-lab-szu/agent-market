@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fig3 Experiment Config",
+  "type": "object",
+  "properties": {
+    "rpc_url": {"type": "string"},
+    "gas_price_gwei": {"type": "number"},
+    "amount": {"type": "number"},
+    "xmtp": {
+      "type": "object",
+      "properties": {
+        "send_cmd": {"type": "string"},
+        "recv_cmd": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "ipfs": {
+      "type": "object",
+      "properties": {
+        "api": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "costs": {
+      "type": "object",
+      "properties": {
+        "samples": {"type": "integer"}
+      },
+      "additionalProperties": false
+    },
+    "latency": {
+      "type": "object",
+      "properties": {
+        "samples": {"type": "integer"},
+        "workloads": {"type": "array", "items": {"type": "string"}},
+        "transport": {"type": "string"},
+        "ipfs_mode": {"type": "string"},
+        "message_delay_ms": {"type": "integer"},
+        "pipeline_steps": {"type": "integer"},
+        "pipeline_bytes": {"type": "integer"},
+        "genai_bytes": {"type": "integer"},
+        "genai_delay_min": {"type": "number"},
+        "genai_delay_max": {"type": "number"},
+        "genai_mode": {"type": "string"},
+        "genai_output_dir": {"type": "string"},
+        "image_width": {"type": "integer"},
+        "image_height": {"type": "integer"},
+        "image_steps": {"type": "integer"},
+        "image_seed": {"type": "integer"},
+        "comfyui_url": {"type": "string"},
+        "comfyui_workflow": {"type": "string"},
+        "comfyui_timeout": {"type": "integer"}
+      },
+      "additionalProperties": false
+    },
+    "tps": {
+      "type": "object",
+      "properties": {
+        "duration": {"type": "integer"},
+        "warmup": {"type": "integer"},
+        "trials": {"type": "integer"},
+        "concurrency": {"type": "array", "items": {"type": "integer"}},
+        "transport": {"type": "string"},
+        "message_delay_ms": {"type": "integer"},
+        "execution_delay_ms": {"type": "integer"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

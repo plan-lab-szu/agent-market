@@ -1,0 +1,10 @@
+{
+  "name": "agent-osi-xmtp-cli",
+  "private": true,
+  "version": "1.0.0",
+  "type": "commonjs",
+  "dependencies": {
+    "@xmtp/node-sdk": "^5.2.0",
+    "ethers": "^5.7.2"
+  }
+}

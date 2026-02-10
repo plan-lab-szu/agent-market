@@ -1,0 +1,45 @@
+{
+  "rpc_url": "http://127.0.0.1:8545",
+  "gas_price_gwei": 20,
+  "amount": 1000000,
+  "xmtp": {
+    "send_cmd": "",
+    "recv_cmd": ""
+  },
+  "ipfs": {
+    "api": "http://127.0.0.1:5001"
+  },
+  "costs": {
+    "samples": 100
+  },
+  "latency": {
+    "samples": 100,
+    "workloads": ["light", "pipeline", "genai"],
+    "transport": "xmtp",
+    "ipfs_mode": "real",
+    "message_delay_ms": 40,
+    "pipeline_steps": 5,
+    "pipeline_bytes": 262144,
+    "genai_bytes": 1048576,
+    "genai_delay_min": 5.0,
+    "genai_delay_max": 15.0,
+    "genai_mode": "auto",
+    "genai_output_dir": "outputs/fig3_genai_images",
+    "image_width": 1024,
+    "image_height": 1024,
+    "image_steps": 30,
+    "image_seed": 42,
+    "comfyui_url": "",
+    "comfyui_workflow": "",
+    "comfyui_timeout": 180
+  },
+  "tps": {
+    "duration": 60,
+    "warmup": 5,
+    "trials": 5,
+    "concurrency": [10, 50, 100, 200, 500],
+    "transport": "xmtp",
+    "message_delay_ms": 40,
+    "execution_delay_ms": 20
+  }
+}
