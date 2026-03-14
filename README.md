@@ -45,13 +45,13 @@ AgentMarket is a proof-of-concept implementation of the Agent-OSI stack for pay-
 
 Prototype stack table:
 
-![Prototype stack table](visual_assets/table.png)
+![Prototype stack table](visual_assets/table.pdf)
 
 Experiment figures:
 
-![Fig3a cost](visual_assets/fig3a.png)
-![Fig3b latency](visual_assets/fig3b.png)
-![Fig3c throughput](visual_assets/fig3c.png)
+![Fig3a cost](visual_assets/fig3a.pdf)
+![Fig3b latency](visual_assets/fig3b.pdf)
+![Fig3c throughput](visual_assets/fig3c.pdf)
 
 ## Repository Layout 🗂️
 
