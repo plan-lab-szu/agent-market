@@ -9,7 +9,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![arXiv](https://img.shields.io/badge/arXiv-TBA-lightgrey)
 
-AgentMarket is a proof-of-concept implementation of the Agent-OSI stack for pay-per-request agent services. It implements an end-to-end flow (discovery → quote → pay → execute → deliver) and produces the figures used in the experimental evaluation.
+AgentMarket is a proof-of-concept implementation of the Agent-OSI stack for pay-per-request agent services, which is reported in paper "Agent-OSI: A Layered Protocol Stack Toward a Decentralized Internet of Agents" (arXiv:2602.13795). It implements an end-to-end flow (discovery → quote → pay → execute → deliver) and produces the figures used in the experimental evaluation.
 
 ## Table of Contents
 
@@ -49,9 +49,9 @@ Prototype stack table:
 
 Experiment figures:
 
-![Fig3a cost](visual_assets/fig3a.pdf)
-![Fig3b latency](visual_assets/fig3b.pdf)
-![Fig3c throughput](visual_assets/fig3c.pdf)
+![Fig3a cost](visual_assets/fig3a.png)
+![Fig3b latency](visual_assets/fig3b.png)
+![Fig3c throughput](visual_assets/fig3c.png)
 
 ## Repository Layout 🗂️
 
